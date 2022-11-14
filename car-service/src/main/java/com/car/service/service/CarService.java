@@ -22,8 +22,11 @@ public class CarService {
     }
 
     public Car save(Car car) {
-        Car mewCar = carRepository.save(car);
-        return mewCar;
+        return carRepository.save(car);
+    }
+
+    public List<Car> byUsuarioId(int usuarioId){
+        return carRepository.findByUsuarioId(usuarioId);
     }
 
 }

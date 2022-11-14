@@ -26,4 +26,8 @@ public class MotorcycleService {
         return newMotorcycle;
     }
 
+    public List<Motorcycle> byUsuarioId(int usuarioId) {
+        return motorcycleRepository.findByUsuarioId(usuarioId);
+    }
+
 }

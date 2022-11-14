@@ -15,5 +15,6 @@ public class Motorcycle {
 
     private String marca;
     private String modelo;
+    private int usuarioId;
 
 }
