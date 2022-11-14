@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//@FeignClient(name = "moto-service", url = "https://localhost:8003/motorcycle")
-@FeignClient(name = "moto-service", path = "https://localhost:8003", url = "/motorcycle")
-//@FeignClient(name = "moto-service", url = "https://localhost:8003")
+//@FeignClient(name = "motorcycle-service", url = "https://localhost:8003/motorcycle")
+@FeignClient(name = "motorcycle-service", path = "https://localhost:8003", url = "/motorcycle")
+//@FeignClient(name = "motorcycle-service", url = "https://localhost:8003")
 //@RequestMapping("/motorcycle")
 public interface MotorcycleFeignClient {
 
